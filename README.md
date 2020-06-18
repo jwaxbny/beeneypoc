@@ -3,6 +3,8 @@ Learn StormCrawler ElasticSearch
 
 ## Local Setup (OSX)
 
+### ElasticSearch
+
 [running-open-distro-for-elasticsearch](https://aws.amazon.com/blogs/opensource/running-open-distro-for-elasticsearch/)
 
 1. Install Docker Desktop
@@ -56,3 +58,9 @@ GET kibana_sample_data_logs/_search
 }
 
 ```
+
+### StormCrawler
+
+[stormcrawler-elasticsearch](https://www.elastic.co/blog/stormcrawler-open-source-web-crawler-strengthened-by-elasticsearch-kibana)
+
+
