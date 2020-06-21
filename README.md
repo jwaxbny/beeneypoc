@@ -74,12 +74,14 @@ BUILD
 
 RUN
 ```
-docker run --net=host \
-    -p 127.0.0.1:9200:9200 \
-    -p 5601:5601 -p 8080:8080 \
-    -v .../newscrawl/elasticsearch:/data/elasticsearch \
-    -v .../newscrawl/warc:/data/warc \
-    --rm -i -t newscrawler:1.16 /bin/bash
+docker run 
+  --net=host     
+  -p 127.0.0.1:9200:9200     
+  -p 5601:5601 -p 8080:8080     
+  -v /data/elasticsearch     
+  -v /data/warc     
+  --rm -i -t newscrawler:1.16 /bin/bash
+
 ```
 
 
