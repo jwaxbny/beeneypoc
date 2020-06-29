@@ -74,8 +74,29 @@ BUILD
 
 RUN
 ```
-> docker run --net=host -p 9200:9200 -p 5601:5601 -p 8080:8080 -v /data/elasticsearch -v /data/warc --rm -i -t newscrawler:1.16 /bin/bash
+> docker run -p 9200:9200 -p 5601:5601 -p 8080:8080 -v /data/elasticsearch -v /data/warc --rm -i -t newscrawler:1.16 /bin/bash
 ```
 
+#### Urls to Storm, Kibana ElasticSearch
+
+1. Get docker ip
+
+2. Make sure your firewall is not in the way.
+
+for linux:
+```
+> ufw allow out on docker0 from 172.17.0.0/16
+```
+
+3. After 2-3 minute try to open:
+
+STORM
+(http://localhost:8080)[http://localhost:8080]
+
+ELASTICSEARCH
+(http://localhost:9200)[http://localhost:9200]
+
+KIBANA
+(http://localhost:5601){http://localhost:5601}
 
 
