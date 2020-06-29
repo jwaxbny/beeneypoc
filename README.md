@@ -80,6 +80,9 @@ RUN
 #### Urls to Storm, Kibana ElasticSearch
 
 1. Get docker ip
+```
+> docker inspect <containerid>
+```
 
 2. Make sure your firewall is not in the way.
 
