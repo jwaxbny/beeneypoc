@@ -74,7 +74,7 @@ BUILD
 
 RUN
 ```
-> docker run -p 9200:9200 -p 5601:5601 -p 8080:8080 -v /data/elasticsearch -v /data/warc --rm -i -t newscrawler:1.16 /bin/bash
+> docker run --net=host -p 9200:9200 -p 5601:5601 -p 8080:8080 -v /data/elasticsearch -v /data/warc --rm -i -t newscrawler:1.16 /bin/bash
 ```
 
 #### Urls to Storm, Kibana ElasticSearch
