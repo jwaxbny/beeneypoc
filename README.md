@@ -1,6 +1,31 @@
 # beeneypoc
 Learn StormCrawler ElasticSearch
 
+## docker-compose
+
+We want a network with:
+
+* Apache Storm + Storm UI
+
+* Elasticsearch
+
+* StormCrawler (integration to Elasticsearch)s
+
+
+### Apache Storm
+[https://dev.to/usamaashraf/playing-with-apache-storm-on-docker---like-a-boss-4bgb]()
+
+__CODE__
+[https://github.com/UsamaAshraf/coincident-hashtags-with-apache-storm/tree/exclamation]()
+
+```
+> docker-compose up --build
+```
+
+
+
+======= ARCHIVE =======
+
 ## Local Setup (OSX)
 
 ### ElasticSearch
@@ -94,12 +119,12 @@ for linux:
 3. After 2-3 minute try to open:
 
 STORM
-(http://localhost:8080)[http://localhost:8080]
+[http://localhost:8080]()
 
 ELASTICSEARCH
-(http://localhost:9200)[http://localhost:9200]
+[http://localhost:9200]()
 
 KIBANA
-(http://localhost:5601){http://localhost:5601}
+[http://localhost:5601]()
 
 
